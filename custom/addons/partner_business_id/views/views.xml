@@ -1,0 +1,19 @@
+<openerp>
+  <data>
+
+  	<record id="view_partner_form" model="ir.ui.view">
+        <field name="name">res.partner.business_id.inherit</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="account.view_partner_property_form"/>
+        <field name="arch" type="xml">
+            <field name="property_account_position_id" position="after">
+            	<label for="business_id"/>
+    			<div name="business_id" class="o_row">
+                	<field name="business_id" placeholder="e.g. 2349368-8"/>
+                </div>
+			</field>
+        </field>
+    </record>
+
+  </data>
+</openerp>
